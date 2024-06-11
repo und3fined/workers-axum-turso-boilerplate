@@ -1,0 +1,3 @@
+[submodule "deps/libsql"]
+	path = deps/libsql
+	url = https://github.com/und3fined/libsql.git

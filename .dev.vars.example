@@ -1,0 +1,4 @@
+# This file contains the environment variables that are required to run the application
+
+TURSO_DB_AUTH_TOKEN="Your turso auth token Here"
+TURSO_DB_URL="Your turso db url here"

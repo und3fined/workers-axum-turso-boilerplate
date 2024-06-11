@@ -1,0 +1,26 @@
+{
+  "name": "workers-axum-turso-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "wrangler deploy",
+    "dev": "NO_MINIFY=true wrangler dev",
+    "start": "NO_MINIFY=true wrangler dev"
+  },
+  "keywords": [
+    "rust",
+    "wasm",
+    "workers",
+    "axum",
+    "turso"
+  ],
+  "author": "und3fined <me@und3fy.dev>",
+  "license": "LICENSE",
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "prettier-plugin-rust": "^0.1.9",
+    "wrangler": "^3.60.1"
+  }
+}

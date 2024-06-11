@@ -1,0 +1,35 @@
+# Basic configuration options for rustfmt
+
+# Use this if you want rustfmt to reformat code in place
+# By default, rustfmt will output a diff indicating what needs to be changed.
+# Unstable option
+#format_in_place = true
+
+# Use 4 spaces for indentation
+tab_spaces = 4
+
+# Use the maximum width for formatting
+# The default is 100
+max_width = 120
+
+# Use visual indentation
+use_visual_indent = true # use block ident style
+
+# Reorder import statements alphabetically
+reorder_imports = true
+
+# Collapse multi-line blocks into one line if they fit within max_width.
+# This option does not affect function bodies.
+collapse_blocks = true
+
+# By default, rustfmt leaves comments unchanged.
+normalize_comments = false
+
+# Control the order of fields in Struct expressions.
+reorder_fields = false
+
+# Control the ordering of where clauses.
+reorder_impl_items = true
+
+# Do not format comments
+#ignore_comments = true

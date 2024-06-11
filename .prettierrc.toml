@@ -1,0 +1,11 @@
+# .prettierrc.toml
+
+useTabs = false
+tabWidth = 4
+printWidth = 120
+endOfLine = "lf"
+singleQuote = false
+
+plugins = ["prettier-plugin-rust"]
+
+overrides = [{ files = "tests/*.rs", options = { printWidth = 80 } }]

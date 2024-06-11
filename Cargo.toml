@@ -1,0 +1,47 @@
+[package]
+name = "workers-axum-turso-boilerplate"
+version = "0.1.0"
+edition = "2021"
+authors = ["und3fined <me@und3fined.com>"]
+license = "LICENSE"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+worker = { version = "0.3.0", features = ['http', 'axum'] }
+worker-macros = { version = "0.3.0", features = ['http'] }
+axum = { version = "0.7", default-features = false, features = [
+  "json",
+  "form",
+  "query",
+  "macros",
+] }
+tower-service = "0.3.2"
+console_error_panic_hook = { version = "0.1.1" }
+anyhow = "1.0.86"
+serde_json = "1.0.117"
+thiserror = "1.0.61"
+serde = { version = "1.0.203", default-features = false, features = ["derive"] }
+tokio = { version = "1.38.0", default-features = false }
+wasm-bindgen-futures = "0.4.42"
+
+# Custom dependencies for libsql
+[dependencies.libsql]
+path = "deps/libsql/libsql"
+version = "0.3.5"
+default-features = false
+features = ["cloudflare"]
+
+[package.metadata.release]
+release = false
+
+# https://github.com/rustwasm/wasm-pack/issues/1247
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+
+[profile.release]
+opt-level = "s"   # optimize for size in release builds
+lto = true
+strip = true
+codegen-units = 1
