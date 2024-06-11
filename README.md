@@ -1,6 +1,6 @@
 # Workers axum turso boilerplate
 
-This is a boilerplate for a web server using [axum](https://github.com/tokio-rs/axum) and [tuso](https://turso.tech) run on Cloudflare [Workers](https://workers.cloudflare.com/).
+This is a boilerplate for a web server using [axum](https://github.com/tokio-rs/axum) and [turso](https://turso.tech) run on Cloudflare [Workers](https://workers.cloudflare.com/).
 
 ### What is included in this boilerplate:
 
